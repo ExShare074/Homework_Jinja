@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+
+{% block tittle %}
+    Все о создателях Трансформеров
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Персонажи Трансформеров</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <h1>Трансформеры: Персонажи</h1>
+            <p>Познай мир автоботов и десептиконов!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Трансформеры</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#autobots">Автоботы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#decepticons">Десептиконы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>Добро пожаловать в мир Трансформеров!</h2>
+            <p>Здесь вы узнаете о самых известных персонажах вселенной.</p>
+            <img src="/static/image/h280_51664305.jpg" alt="Transformers Banner" class="img-fluid rounded shadow">
+        </div>
+    </section>
+
+    <!-- Movies Series Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Серия Фильмов</h2>
+            <img src="/static/image/02.jpg" alt="Transformers Movies" class="img-fluid rounded shadow mb-4">
+            <div id="accordionExample" class="accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Трансформеры (2007)
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Первый фильм в серии, рассказывающий о прибытии автоботов на Землю. Фильм повествует о войне автоботов и десептиконов — разумных инопланетных
+                            роботов, способных трансформироваться в разнообразную технику. Предметом их раздора становится могущественный артефакт Великая Искра,
+                            который при неправильном использовании может принести в Галактику разрушения и смерть. Автоботы прилетают на Землю, чтобы защитить Искру
+                            от десептиконов, которые хотят использовать её в своих корыстных целях. Слабые, но смелые люди приходят на помощь автоботам.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Трансформеры: Месть падших (2009)
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Второй фильм, где автоботы сталкиваются с новой угрозой. 17 000 лет назад до н. э. семь Праймов странствовали по Галактике в поисках звёзд для создания Энергона.
+                            Они установили одно правило — не уничтожать планеты, на которых есть жизнь. Но один из них нарушил это правило, Мегатронус Прайм (впоследствии — Фоллен/Падший),
+                            и установил на Земле Гаситель звёзд — устройство, собирающее энергию Солнца посредством уничтожения последнего. Однако машину можно активировать только с
+                            помощью Матрицы Лидерства. Вступив в бой со своими бывшими собратьями, Фоллен проиграл схватку, а Матрица была спрятана Праймами в неизвестном месте на планете.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Трансформеры: Темная сторона Луны (2011)
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Третий фильм, где автоботы спасают Землю от новой угрозы. В основе сюжетной завязки третьего фильма лежат реальные события — первая высадка космонавтов на Луне
+                            20 июля 1969 года. В космическую гонку между СССР и США оказались втянуты автоботы[9], которые под руководством Сентинела Прайма после поражения в войне с
+                            десептиконами бежали с Кибертрона — родной планеты роботов. Из-за повреждений звездолёт автоботов разбивается на обратной стороне Луны. Узнав об этом,
+                            президент Кеннеди отдаёт приказ готовить высадку на Луне. Получив секретный приказ, американские астронавты, высадившиеся на Луне, уходят в радиомолчание,
+                            обследуют разбитый звездолёт и находят на борту тела автоботов.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Трансформеры: Эпоха истребления (2014)
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Четвертый фильм, где автоботы спасают Землю от новой угрозы. События фильма начинаются с того, как во времена динозавров на
+                            планете Земля некие инопланетные существа уничтожают большой участок поверхности, превращая его в необычный металл — трансформий.
+                            После, уже в наше время, Дарси Тайрил прибывает на место раскопок в Арктике, где люди Джошуа Джойса, главы компании KSI
+                            обнаружили трансформий, а точнее киберформированных динозавров.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Трансформеры: Последний рыцарь (2017)
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Пятая часть из серии фильмов о Трансформерах. Является продолжением фильма «Трансформеры: Эпоха истребления»
+                            В 484 году волшебник короля бриттов Артура Мерлин заключает сделку с двенадцатью рыцарями-стражами с Кибертрона.
+                            В качестве вознаграждения за сохранность их тайны пребывания на Земле волшебник просит помочь армии короля в
+                            сражении с саксами. Рыцари дают Мерлину свой артефакт — посох, происхождение которого неизвестно, и трансформируются
+                            в составного дракона. Трёхглавый гештальт летит на помощь войскам Артура. Ожесточённое сражение заканчивается
+                            поражением саксов в Битве при Бадонском холме против бриттов.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Трансформеры: Восхождение Звероботов (2023)
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Фильм сосредоточен вокруг Оптимуса Прайма, а события разворачиваются в 1994 году в Нью-Йорке и в некоторых городах Перу,
+                            таких, как Мачу-Пикчу, Куско, а также в регионе Сан-Мартин[8]. Автором сценария выступил Джоби Харольд[англ.], а также
+                            Дарнелл Метайер и Джош Питерс. Картина является сиквелом ленты «Бамблби» (2018), седьмым фильмом франшизы и первым в
+                            новой трилогии. Главные роли исполнили Доминик Фишбэк, Энтони Рамос, Тоби Нвигве и Луна Лорен Велес.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autobots Section -->
+    <section id="autobots" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Автоботы</h2>
+            <div class="row g-4">
+                <!-- Optimus Prime -->
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Optimus Prime" class="img-fluid rounded-circle mb-3">
+                    <h5>Оптимус Прайм</h5>
+                    <p>Лидер автоботов, борец за свободу и справедливость.</p>
+                </div>
+                <!-- Bumblebee -->
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Bumblebee" class="img-fluid rounded-circle mb-3">
+                    <h5>Бамблби</h5>
+                    <p>Молодой разведчик, известный своей храбростью.</p>
+                </div>
+                <!-- Ratchet -->
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Ratchet" class="img-fluid rounded-circle mb-3">
+                    <h5>Рэтчет</h5>
+                    <p>Медик автоботов, всегда готов помочь товарищам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Decepticons Section -->
+    <section id="decepticons" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Десептиконы</h2>
+            <div class="row g-4">
+                <!-- Megatron -->
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Megatron" class="img-fluid rounded-circle mb-3">
+                    <h5>Мегатрон</h5>
+                    <p>Лидер десептиконов, стремящийся к власти любой ценой.</p>
+                </div>
+                <!-- Starscream -->
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Starscream" class="img-fluid rounded-circle mb-3">
+                    <h5>Старскрим</h5>
+                    <p>Хитрый и амбициозный военачальник десептиконов.</p>
+                </div>
+                <!-- Soundwave -->
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Soundwave" class="img-fluid rounded-circle mb-3">
+                    <h5>Саундвейв</h5>
+                    <p>Мастер шпионажа и верный слуга Мегатрона.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-primary text-white text-center">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Мы — фанаты вселенной Трансформеров, стремящиеся поделиться знаниями и вдохновить других на изучение этой удивительной истории.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            &copy; 2025 Трансформеры. Все права защищены.
+            <br><br>
+            Следите за нами:
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
