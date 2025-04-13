@@ -1,30 +1,11 @@
 {% extends "base.html" %}
 
 {% block tittle %}
-    Все о создателях Трансформеров
+    Все о персонажах Трансформеров
 {% endblock %}
 
-{% block content %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Персонажи Трансформеров</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
-    <header class="bg-dark text-white py-3">
-        <div class="container text-center">
-            <h1>Трансформеры: Персонажи</h1>
-            <p>Познай мир автоботов и десептиконов!</p>
-        </div>
-    </header>
+{% block content %}
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -44,14 +25,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="bg-light py-5 text-center">
-        <div class="container">
-            <h2>Добро пожаловать в мир Трансформеров!</h2>
-            <p>Здесь вы узнаете о самых известных персонажах вселенной.</p>
-            <img src="/static/image/h280_51664305.jpg" alt="Transformers Banner" class="img-fluid rounded shadow">
-        </div>
-    </section>
+
 
     <!-- Movies Series Section -->
     <section class="py-5 bg-light">
@@ -163,19 +137,19 @@
             <div class="row g-4">
                 <!-- Optimus Prime -->
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/150" alt="Optimus Prime" class="img-fluid rounded-circle mb-3">
+                    <img src="/static/image/opt.jpg" alt="Optimus Prime" class="img-fluid rounded-circle mb-3">
                     <h5>Оптимус Прайм</h5>
                     <p>Лидер автоботов, борец за свободу и справедливость.</p>
                 </div>
                 <!-- Bumblebee -->
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/150" alt="Bumblebee" class="img-fluid rounded-circle mb-3">
+                    <img src="/static/image/bam.jpg" alt="Bumblebee" class="img-fluid rounded-circle mb-3">
                     <h5>Бамблби</h5>
                     <p>Молодой разведчик, известный своей храбростью.</p>
                 </div>
                 <!-- Ratchet -->
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/150" alt="Ratchet" class="img-fluid rounded-circle mb-3">
+                    <img src="/static/image/retch.jpg" alt="Ratchet" class="img-fluid rounded-circle mb-3">
                     <h5>Рэтчет</h5>
                     <p>Медик автоботов, всегда готов помочь товарищам.</p>
                 </div>
@@ -190,19 +164,19 @@
             <div class="row g-4">
                 <!-- Megatron -->
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/150" alt="Megatron" class="img-fluid rounded-circle mb-3">
+                    <img src="/static/image/mg.jpg" alt="Megatron" class="img-fluid rounded-circle mb-3">
                     <h5>Мегатрон</h5>
                     <p>Лидер десептиконов, стремящийся к власти любой ценой.</p>
                 </div>
                 <!-- Starscream -->
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/150" alt="Starscream" class="img-fluid rounded-circle mb-3">
+                    <img src="/static/image/stars.jpg" alt="Starscream" class="img-fluid rounded-circle mb-3">
                     <h5>Старскрим</h5>
                     <p>Хитрый и амбициозный военачальник десептиконов.</p>
                 </div>
                 <!-- Soundwave -->
                 <div class="col-md-4 text-center">
-                    <img src="https://via.placeholder.com/150" alt="Soundwave" class="img-fluid rounded-circle mb-3">
+                    <img src="/static/image/saund.jpg" alt="Soundwave" class="img-fluid rounded-circle mb-3">
                     <h5>Саундвейв</h5>
                     <p>Мастер шпионажа и верный слуга Мегатрона.</p>
                 </div>
@@ -210,27 +184,4 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5 bg-primary text-white text-center">
-        <div class="container">
-            <h2>О нас</h2>
-            <p>Мы — фанаты вселенной Трансформеров, стремящиеся поделиться знаниями и вдохновить других на изучение этой удивительной истории.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            &copy; 2025 Трансформеры. Все права защищены.
-            <br><br>
-            Следите за нами:
-            <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-            <a href="#" class=""><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
-
-    <!-- Bootstrap JS and Font Awesome -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
+{% endblock %}

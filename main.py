@@ -6,18 +6,18 @@ app = Flask(__name__)
 @app.route("/")
 def films():
     context = {
-        "link": "Персонажи Гарри Поттера"
+        "title": "Все о персонажах Трансформеров",
     }
-    return render_template("index.html", **context)
+    return render_template("home.html", **context)
 
 
 
 @app.route("/person/")
 def person():
     context = {
-        "link": "Персонажи Гарри Поттера в аккордеоне"
+        "title": "Все о создателях Трансформеров"
     }
-    return render_template("main.html")
+    return render_template("about.html", **context)
 
 
 if __name__ == "__main__":
